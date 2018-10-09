@@ -40,7 +40,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Foodie" id="2sd-cn-YjC"/>
                     <connections>
-                        <segue destination="g2L-Jr-o7Y" kind="show" id="rom-DN-H9F"/>
+                        <segue destination="g2L-Jr-o7Y" kind="show" identifier="segueToRestaurant" id="rom-DN-H9F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

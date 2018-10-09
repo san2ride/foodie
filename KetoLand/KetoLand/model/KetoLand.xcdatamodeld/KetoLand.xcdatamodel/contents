@@ -7,7 +7,7 @@
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="storedLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredLocation" inverseName="restaurants" inverseEntity="StoredLocation" syncable="YES"/>
     </entity>
-    <entity name="StoredLocation" representedClassName="StoredLocation" syncable="YES" codeGenerationType="class">
+    <entity name="StoredLocation" representedClassName="StoredLocation" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Restaurant" inverseName="storedLocation" inverseEntity="Restaurant" syncable="YES"/>
     </entity>

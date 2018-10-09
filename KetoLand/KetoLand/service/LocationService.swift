@@ -10,5 +10,21 @@ import Foundation
 import CoreLocation
 
 class LocationService: NSObject {
+    static let shared = LocationService()
+    private override init() {}
+    
+    var locationUpdateHandler: ((Bool, CLLocation?) -> Void)?
+    
+    var userLocation: CLLocation?
+    let locationManager = CLLocationManager()
+    
+    func findUserLocation() {
+        
+    }
+}
 
+extension LocationService: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+    }
 }

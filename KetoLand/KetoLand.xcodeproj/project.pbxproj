@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD64AC58216C9C3800CF2545 /* Restaurant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC54216C9C3800CF2545 /* Restaurant+CoreDataClass.swift */; };
+		AD64AC59216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */; };
+		AD64AC5A216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */; };
+		AD64AC5B216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC57216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift */; };
 		AD7BF384216C23E000C7C7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */; };
 		AD7BF389216C23E000C7C7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7BF387216C23E000C7C7F4 /* Main.storyboard */; };
 		AD7BF38C216C23E000C7C7F4 /* KetoLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF38A216C23E000C7C7F4 /* KetoLand.xcdatamodeld */; };
@@ -20,13 +24,13 @@
 		AD9AD313216C910500D90DD6 /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD312216C910500D90DD6 /* RESTService.swift */; };
 		AD9AD315216C914000D90DD6 /* KetoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD314216C914000D90DD6 /* KetoService.swift */; };
 		AD9AD317216C91A100D90DD6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD316216C91A100D90DD6 /* LocationService.swift */; };
-		AD9AD31D216C932B00D90DD6 /* Restaurant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD319216C932B00D90DD6 /* Restaurant+CoreDataClass.swift */; };
-		AD9AD31E216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD31A216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift */; };
-		AD9AD31F216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD31B216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift */; };
-		AD9AD320216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD31C216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD64AC54216C9C3800CF2545 /* Restaurant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD64AC57216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD7BF380216C23DF00C7C7F4 /* KetoLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KetoLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD7BF388216C23E000C7C7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,10 +46,6 @@
 		AD9AD312216C910500D90DD6 /* RESTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
 		AD9AD314216C914000D90DD6 /* KetoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoService.swift; sourceTree = "<group>"; };
 		AD9AD316216C91A100D90DD6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		AD9AD319216C932B00D90DD6 /* Restaurant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AD9AD31A216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		AD9AD31B216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AD9AD31C216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +140,10 @@
 		AD9AD318216C91CD00D90DD6 /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				AD9AD319216C932B00D90DD6 /* Restaurant+CoreDataClass.swift */,
-				AD9AD31A216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift */,
-				AD9AD31B216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift */,
-				AD9AD31C216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift */,
+				AD64AC54216C9C3800CF2545 /* Restaurant+CoreDataClass.swift */,
+				AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */,
+				AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */,
+				AD64AC57216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -219,19 +219,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9AD31D216C932B00D90DD6 /* Restaurant+CoreDataClass.swift in Sources */,
+				AD64AC58216C9C3800CF2545 /* Restaurant+CoreDataClass.swift in Sources */,
 				AD9AD30C216C901800D90DD6 /* RestaurantCell.swift in Sources */,
 				AD7BF39F216C253600C7C7F4 /* MainController.swift in Sources */,
 				AD9AD317216C91A100D90DD6 /* LocationService.swift in Sources */,
 				AD7BF38C216C23E000C7C7F4 /* KetoLand.xcdatamodeld in Sources */,
 				AD9AD313216C910500D90DD6 /* RESTService.swift in Sources */,
-				AD9AD31E216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift in Sources */,
+				AD64AC59216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift in Sources */,
 				AD9AD30E216C907000D90DD6 /* CoreDataStack.swift in Sources */,
 				AD7BF384216C23E000C7C7F4 /* AppDelegate.swift in Sources */,
-				AD9AD320216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift in Sources */,
+				AD64AC5B216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift in Sources */,
 				AD9AD310216C90BD00D90DD6 /* Place.swift in Sources */,
 				AD9AD315216C914000D90DD6 /* KetoService.swift in Sources */,
-				AD9AD31F216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift in Sources */,
+				AD64AC5A216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift in Sources */,
 				AD7BF39D216C251900C7C7F4 /* RestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
