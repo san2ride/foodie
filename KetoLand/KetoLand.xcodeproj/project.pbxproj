@@ -14,6 +14,16 @@
 		AD7BF391216C23E800C7C7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7BF38F216C23E800C7C7F4 /* LaunchScreen.storyboard */; };
 		AD7BF39D216C251900C7C7F4 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF39C216C251900C7C7F4 /* RestaurantController.swift */; };
 		AD7BF39F216C253600C7C7F4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF39E216C253600C7C7F4 /* MainController.swift */; };
+		AD9AD30C216C901800D90DD6 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD30B216C901800D90DD6 /* RestaurantCell.swift */; };
+		AD9AD30E216C907000D90DD6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD30D216C907000D90DD6 /* CoreDataStack.swift */; };
+		AD9AD310216C90BD00D90DD6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD30F216C90BC00D90DD6 /* Place.swift */; };
+		AD9AD313216C910500D90DD6 /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD312216C910500D90DD6 /* RESTService.swift */; };
+		AD9AD315216C914000D90DD6 /* KetoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD314216C914000D90DD6 /* KetoService.swift */; };
+		AD9AD317216C91A100D90DD6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD316216C91A100D90DD6 /* LocationService.swift */; };
+		AD9AD31D216C932B00D90DD6 /* Restaurant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD319216C932B00D90DD6 /* Restaurant+CoreDataClass.swift */; };
+		AD9AD31E216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD31A216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift */; };
+		AD9AD31F216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD31B216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift */; };
+		AD9AD320216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9AD31C216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		AD7BF392216C23E800C7C7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD7BF39C216C251900C7C7F4 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 		AD7BF39E216C253600C7C7F4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		AD9AD30B216C901800D90DD6 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		AD9AD30D216C907000D90DD6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AD9AD30F216C90BC00D90DD6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		AD9AD312216C910500D90DD6 /* RESTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
+		AD9AD314216C914000D90DD6 /* KetoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoService.swift; sourceTree = "<group>"; };
+		AD9AD316216C91A100D90DD6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		AD9AD319216C932B00D90DD6 /* Restaurant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD9AD31A216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD9AD31B216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD9AD31C216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +78,13 @@
 		AD7BF382216C23DF00C7C7F4 /* KetoLand */ = {
 			isa = PBXGroup;
 			children = (
+				AD9AD318216C91CD00D90DD6 /* entity */,
+				AD9AD311216C90D400D90DD6 /* service */,
+				AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */,
+				AD7BF387216C23E000C7C7F4 /* Main.storyboard */,
 				AD7BF39A216C244700C7C7F4 /* controller */,
 				AD7BF39B216C245000C7C7F4 /* view */,
 				AD7BF399216C243700C7C7F4 /* model */,
-				AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */,
-				AD7BF387216C23E000C7C7F4 /* Main.storyboard */,
 				AD7BF398216C241400C7C7F4 /* Supporting Files */,
 			);
 			path = KetoLand;
@@ -81,6 +103,8 @@
 		AD7BF399216C243700C7C7F4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				AD9AD30F216C90BC00D90DD6 /* Place.swift */,
+				AD9AD30D216C907000D90DD6 /* CoreDataStack.swift */,
 				AD7BF38A216C23E000C7C7F4 /* KetoLand.xcdatamodeld */,
 			);
 			path = model;
@@ -98,8 +122,30 @@
 		AD7BF39B216C245000C7C7F4 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AD9AD30B216C901800D90DD6 /* RestaurantCell.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		AD9AD311216C90D400D90DD6 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				AD9AD312216C910500D90DD6 /* RESTService.swift */,
+				AD9AD314216C914000D90DD6 /* KetoService.swift */,
+				AD9AD316216C91A100D90DD6 /* LocationService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		AD9AD318216C91CD00D90DD6 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				AD9AD319216C932B00D90DD6 /* Restaurant+CoreDataClass.swift */,
+				AD9AD31A216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift */,
+				AD9AD31B216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift */,
+				AD9AD31C216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift */,
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +219,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9AD31D216C932B00D90DD6 /* Restaurant+CoreDataClass.swift in Sources */,
+				AD9AD30C216C901800D90DD6 /* RestaurantCell.swift in Sources */,
 				AD7BF39F216C253600C7C7F4 /* MainController.swift in Sources */,
+				AD9AD317216C91A100D90DD6 /* LocationService.swift in Sources */,
 				AD7BF38C216C23E000C7C7F4 /* KetoLand.xcdatamodeld in Sources */,
+				AD9AD313216C910500D90DD6 /* RESTService.swift in Sources */,
+				AD9AD31E216C932B00D90DD6 /* Restaurant+CoreDataProperties.swift in Sources */,
+				AD9AD30E216C907000D90DD6 /* CoreDataStack.swift in Sources */,
 				AD7BF384216C23E000C7C7F4 /* AppDelegate.swift in Sources */,
+				AD9AD320216C932B00D90DD6 /* StoredLocation+CoreDataProperties.swift in Sources */,
+				AD9AD310216C90BD00D90DD6 /* Place.swift in Sources */,
+				AD9AD315216C914000D90DD6 /* KetoService.swift in Sources */,
+				AD9AD31F216C932B00D90DD6 /* StoredLocation+CoreDataClass.swift in Sources */,
 				AD7BF39D216C251900C7C7F4 /* RestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
