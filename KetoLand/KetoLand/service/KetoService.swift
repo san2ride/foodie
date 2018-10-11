@@ -59,4 +59,34 @@ class KetoService {
             }
         }
     }
+    
+    func getRestaurantList() -> [Restaurant]? {
+        let request: NSFetchRequest<Restaurant> = Restaurant.fetchRequest()
+        
+        do {
+            let results = try managedObjectContext?.fetch(request)
+            return results
+        }
+        catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+        return nil
+    }
+    
+    func deleteRestaurantList() {
+        let request: NSFetchRequest<Restaurant> = Restaurant.fetchRequest()
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request as! NSFetchRequest<NSFetchRequestResult>)
+        
+        do {
+            try managedObjectContext?.execute(deleteRequest)
+        }
+        catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func saveCurrentList(withName name: String?) {
+        
+    }
 }
