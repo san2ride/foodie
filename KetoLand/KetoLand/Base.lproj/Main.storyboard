@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Foodie-->
+        <!--find keto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainController" customModule="KetoLand" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GW6-h2-aNF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ketoland" translatesAutoresizingMaskIntoConstraints="NO" id="GW6-h2-aNF">
                                 <rect key="frame" x="87" y="142" width="200" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfI-0L-G41">
-                                <rect key="frame" x="45.5" y="411" width="284" height="43"/>
+                                <rect key="frame" x="45.5" y="398" width="284" height="56"/>
                                 <color key="backgroundColor" red="0.1843137255" green="1" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
-                                <state key="normal" title="Keto Around Me">
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="keto around me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -41,13 +41,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Foodie" id="2sd-cn-YjC"/>
+                    <navigationItem key="navigationItem" title="find keto" id="2sd-cn-YjC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="733.60000000000002" y="-412.44377811094455"/>
         </scene>
-        <!--Keto Around Me-->
+        <!--keto around me-->
         <scene sceneID="5VV-HR-7hU">
             <objects>
                 <viewController id="g2L-Jr-o7Y" customClass="RestaurantController" customModule="KetoLand" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,7 +124,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P7d-89-5l5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Keto Around Me" id="Ivq-J2-54v">
+                    <navigationItem key="navigationItem" title="keto around me" id="Ivq-J2-54v">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sa8-DX-e5J">
                             <connections>
                                 <action selector="didTapSave:" destination="g2L-Jr-o7Y" id="IHC-2y-c5P"/>
@@ -166,4 +166,7 @@
             <point key="canvasLocation" x="-234" y="-412"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ketoland" width="210" height="210"/>
+    </resources>
 </document>
