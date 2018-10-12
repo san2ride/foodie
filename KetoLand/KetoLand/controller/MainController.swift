@@ -20,17 +20,17 @@ class MainController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        findUserLocation()
-        
         self.view.addSubview(revealingSplashView)
-        revealingSplashView.animationType = SplashAnimationType.woobleAndZoomOut
+        revealingSplashView.animationType = SplashAnimationType.heartBeat
         revealingSplashView.startAnimation()
-        revealingSplashView.playWoobleAnimation()
+    
+        findUserLocation()
     }
     
-    @IBAction func didTapRestaurantAroundMe(_ sender: UIButton) {
-        
-    }
+//    @IBAction func didTapRestaurantAroundMe(_ sender: UIButton) {
+//        aroundMeButton.animateButton(shouldLoad: true, withMessage: nil)
+//        self.view.endEditing(true)
+//    }
     
     private func findUserLocation() {
         locationManager = CLLocationManager()
@@ -44,6 +44,8 @@ class MainController: UIViewController {
             CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager?.startUpdatingLocation()
         }
+        
+        revealingSplashView.heartAttack = true
     }
     
     // MARK: Navigation

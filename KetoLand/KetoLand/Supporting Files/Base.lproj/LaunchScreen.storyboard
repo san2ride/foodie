@@ -18,15 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ketoland" translatesAutoresizingMaskIntoConstraints="NO" id="OjU-XE-JHy">
-                                <rect key="frame" x="47" y="193" width="281" height="281"/>
+                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5hj-1Q-Mnp"/>
+                                    <constraint firstAttribute="width" constant="80" id="JF4-s9-sit"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OjU-XE-JHy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6lb-Ls-az9"/>
-                            <constraint firstItem="OjU-XE-JHy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Mxd-qu-vZf"/>
-                            <constraint firstItem="OjU-XE-JHy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gaf-dE-n8g"/>
-                            <constraint firstItem="OjU-XE-JHy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="yly-Xh-Qaj"/>
+                            <constraint firstItem="OjU-XE-JHy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EVy-FZ-9kO"/>
+                            <constraint firstItem="OjU-XE-JHy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="I49-M3-mCU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

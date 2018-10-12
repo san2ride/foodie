@@ -12,6 +12,9 @@
 		AD64AC59216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */; };
 		AD64AC5A216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */; };
 		AD64AC5B216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC57216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift */; };
+		AD6AD635217097C600BD92DB /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AD634217097C600BD92DB /* RoundedShadowView.swift */; };
+		AD6AD6372170998C00BD92DB /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AD6362170998C00BD92DB /* RoundedShadowButton.swift */; };
+		AD6AD63C21709CE200BD92DB /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AD63B21709CE200BD92DB /* UIView+Ext.swift */; };
 		AD7BF384216C23E000C7C7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */; };
 		AD7BF389216C23E000C7C7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7BF387216C23E000C7C7F4 /* Main.storyboard */; };
 		AD7BF38C216C23E000C7C7F4 /* KetoLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF38A216C23E000C7C7F4 /* KetoLand.xcdatamodeld */; };
@@ -35,6 +38,9 @@
 		AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD64AC57216C9C3800CF2545 /* StoredLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD6AD634217097C600BD92DB /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		AD6AD6362170998C00BD92DB /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		AD6AD63B21709CE200BD92DB /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		AD7BF380216C23DF00C7C7F4 /* KetoLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KetoLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD7BF388216C23E000C7C7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +87,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD6AD63821709C7A00BD92DB /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD6AD63B21709CE200BD92DB /* UIView+Ext.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		AD7BF377216C23DF00C7C7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,7 @@
 		AD7BF382216C23DF00C7C7F4 /* KetoLand */ = {
 			isa = PBXGroup;
 			children = (
+				AD6AD63821709C7A00BD92DB /* extensions */,
 				AD9AD318216C91CD00D90DD6 /* entity */,
 				AD9AD311216C90D400D90DD6 /* service */,
 				AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */,
@@ -147,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				AD9AD30B216C901800D90DD6 /* RestaurantCell.swift */,
+				AD6AD634217097C600BD92DB /* RoundedShadowView.swift */,
+				AD6AD6362170998C00BD92DB /* RoundedShadowButton.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -284,12 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6AD63C21709CE200BD92DB /* UIView+Ext.swift in Sources */,
 				AD64AC58216C9C3800CF2545 /* Restaurant+CoreDataClass.swift in Sources */,
 				AD9AD30C216C901800D90DD6 /* RestaurantCell.swift in Sources */,
+				AD6AD635217097C600BD92DB /* RoundedShadowView.swift in Sources */,
 				AD7BF39F216C253600C7C7F4 /* MainController.swift in Sources */,
 				AD9AD317216C91A100D90DD6 /* LocationService.swift in Sources */,
 				AD7BF38C216C23E000C7C7F4 /* KetoLand.xcdatamodeld in Sources */,
 				AD9AD313216C910500D90DD6 /* RESTService.swift in Sources */,
+				AD6AD6372170998C00BD92DB /* RoundedShadowButton.swift in Sources */,
 				AD64AC59216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift in Sources */,
 				AD9AD30E216C907000D90DD6 /* CoreDataStack.swift in Sources */,
 				AD7BF384216C23E000C7C7F4 /* AppDelegate.swift in Sources */,

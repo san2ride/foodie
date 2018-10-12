@@ -17,13 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ketoland" translatesAutoresizingMaskIntoConstraints="NO" id="GW6-h2-aNF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ketoland" translatesAutoresizingMaskIntoConstraints="NO" id="GW6-h2-aNF">
                                 <rect key="frame" x="87" y="142" width="200" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="hGE-ww-sM7"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfI-0L-G41">
-                                <rect key="frame" x="45.5" y="398" width="284" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfI-0L-G41" customClass="RoundedShadowButton" customModule="KetoLand" customModuleProvider="target">
+                                <rect key="frame" x="16" y="481" width="343" height="60"/>
                                 <color key="backgroundColor" red="0.1843137255" green="1" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9Yv-FY-12n"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
                                 <state key="normal" title="keto around me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,9 +40,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XfI-0L-G41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45.5" id="X2S-wD-eGK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XfI-0L-G41" secondAttribute="trailing" constant="45.5" id="gnY-cy-jdr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XfI-0L-G41" secondAttribute="bottom" constant="97" id="oKX-wv-sxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XfI-0L-G41" secondAttribute="trailing" constant="16" id="Bdo-D4-dEB"/>
+                            <constraint firstItem="GW6-h2-aNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Jur-pD-LKY"/>
+                            <constraint firstItem="GW6-h2-aNF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="TQ8-3L-37T"/>
+                            <constraint firstItem="XfI-0L-G41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ew2-Lm-IrS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XfI-0L-G41" secondAttribute="bottom" constant="10" id="z16-sd-nft"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
