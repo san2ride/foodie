@@ -28,6 +28,9 @@
                                 <state key="normal" title="Keto Around Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="g2L-Jr-o7Y" kind="show" identifier="segueToRestaurant" id="wrD-UQ-A5X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,9 +42,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Foodie" id="2sd-cn-YjC"/>
-                    <connections>
-                        <segue destination="g2L-Jr-o7Y" kind="show" identifier="segueToRestaurant" id="rom-DN-H9F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +59,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="ketoCell" rowHeight="110" id="A8h-Y1-cdZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="ketoCell" rowHeight="110" id="A8h-Y1-cdZ" customClass="RestaurantCell" customModule="KetoLand" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A8h-Y1-cdZ" id="h5r-J7-Rgy">
@@ -106,6 +106,11 @@
                                                 <constraint firstItem="0IT-Cd-9Jx" firstAttribute="leading" secondItem="SZt-kN-HCk" secondAttribute="trailing" constant="8" symbolic="YES" id="hfE-Cv-esh"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="m2v-uu-7z9" id="Snm-MO-sva"/>
+                                            <outlet property="nameLabel" destination="rHu-Lu-Ru4" id="j0u-ct-FBX"/>
+                                            <outlet property="thumbImageView" destination="SZt-kN-HCk" id="ATE-3Y-YIR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -120,8 +125,15 @@
                         <viewLayoutGuide key="safeArea" id="P7d-89-5l5"/>
                     </view>
                     <navigationItem key="navigationItem" title="Keto Around Me" id="Ivq-J2-54v">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sa8-DX-e5J"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sa8-DX-e5J">
+                            <connections>
+                                <action selector="didTapSave:" destination="g2L-Jr-o7Y" id="IHC-2y-c5P"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="D1T-zB-fZY" id="2py-U0-SHo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgm-QA-sn6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
