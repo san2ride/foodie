@@ -8,15 +8,24 @@
 
 import UIKit
 import CoreLocation
+import RevealingSplashView
 
 class MainController: UIViewController {
     
     private var userLocation: CLLocation?
     private var locationManager: CLLocationManager?
 
+    let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "ketoland")!, iconInitialSize: CGSize(width: 80, height: 80), backgroundColor: UIColor.white)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         findUserLocation()
+        
+        self.view.addSubview(revealingSplashView)
+        revealingSplashView.animationType = SplashAnimationType.woobleAndZoomOut
+        revealingSplashView.startAnimation()
+        revealingSplashView.playWoobleAnimation()
     }
     
     @IBAction func didTapRestaurantAroundMe(_ sender: UIButton) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54AF0A5A6B8222B9AD9E41B5 /* Pods_KetoLand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9130311B51632BC09F6B54C4 /* Pods_KetoLand.framework */; };
 		AD64AC58216C9C3800CF2545 /* Restaurant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC54216C9C3800CF2545 /* Restaurant+CoreDataClass.swift */; };
 		AD64AC59216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */; };
 		AD64AC5A216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9130311B51632BC09F6B54C4 /* Pods_KetoLand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetoLand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA4E6E5EC3F08DF3267A23E /* Pods-KetoLand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoLand.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetoLand/Pods-KetoLand.release.xcconfig"; sourceTree = "<group>"; };
+		ABC8A27285D614EC0ED3D1FA /* Pods-KetoLand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoLand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetoLand/Pods-KetoLand.debug.xcconfig"; sourceTree = "<group>"; };
 		AD64AC54216C9C3800CF2545 /* Restaurant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD64AC55216C9C3800CF2545 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD64AC56216C9C3800CF2545 /* StoredLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoredLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -53,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AF0A5A6B8222B9AD9E41B5 /* Pods_KetoLand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87E96D63885727D587A5C981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9130311B51632BC09F6B54C4 /* Pods_KetoLand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B03D4C166613A0613B4EE91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABC8A27285D614EC0ED3D1FA /* Pods-KetoLand.debug.xcconfig */,
+				9EA4E6E5EC3F08DF3267A23E /* Pods-KetoLand.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD7BF377216C23DF00C7C7F4 = {
 			isa = PBXGroup;
 			children = (
 				AD7BF382216C23DF00C7C7F4 /* KetoLand */,
 				AD7BF381216C23DF00C7C7F4 /* Products */,
+				8B03D4C166613A0613B4EE91 /* Pods */,
+				87E96D63885727D587A5C981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD7BF395216C23E800C7C7F4 /* Build configuration list for PBXNativeTarget "KetoLand" */;
 			buildPhases = (
+				9E0F1CC617ACF8F0B0F8711D /* [CP] Check Pods Manifest.lock */,
 				AD7BF37C216C23DF00C7C7F4 /* Sources */,
 				AD7BF37D216C23DF00C7C7F4 /* Frameworks */,
 				AD7BF37E216C23DF00C7C7F4 /* Resources */,
+				513AC373AF6CF704ED18FFC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		513AC373AF6CF704ED18FFC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KetoLand/Pods-KetoLand-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetoLand/Pods-KetoLand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0F1CC617ACF8F0B0F8711D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KetoLand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD7BF37C216C23DF00C7C7F4 /* Sources */ = {
@@ -376,6 +441,7 @@
 		};
 		AD7BF396216C23E800C7C7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC8A27285D614EC0ED3D1FA /* Pods-KetoLand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +460,7 @@
 		};
 		AD7BF397216C23E800C7C7F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA4E6E5EC3F08DF3267A23E /* Pods-KetoLand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
