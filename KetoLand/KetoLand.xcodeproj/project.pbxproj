@@ -119,11 +119,11 @@
 				AD6AD63821709C7A00BD92DB /* extensions */,
 				AD9AD318216C91CD00D90DD6 /* entity */,
 				AD9AD311216C90D400D90DD6 /* service */,
-				AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */,
-				AD7BF387216C23E000C7C7F4 /* Main.storyboard */,
 				AD7BF39A216C244700C7C7F4 /* controller */,
 				AD7BF39B216C245000C7C7F4 /* view */,
 				AD7BF399216C243700C7C7F4 /* model */,
+				AD7BF383216C23E000C7C7F4 /* AppDelegate.swift */,
+				AD7BF387216C23E000C7C7F4 /* Main.storyboard */,
 				AD7BF398216C241400C7C7F4 /* Supporting Files */,
 			);
 			path = KetoLand;

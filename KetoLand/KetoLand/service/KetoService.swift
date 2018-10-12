@@ -87,6 +87,37 @@ class KetoService {
     }
     
     func saveCurrentList(withName name: String?) {
+        guard
+            let managedObjectContext = managedObjectContext,
+            let name = name, !name.isEmpty,
+            !places.isEmpty
+        else { return }
         
+        let privateContext = CoreDataStack().persistentContainer.newBackgroundContext()
+        
+        var restaurants = [Restaurant]()
+        do {
+            for place in places {
+                let restaurant = Restaurant(context: privateContext)
+                restaurant.name = place.placeInfo.name
+                restaurant.address = place.placeInfo.location.address
+                restaurant.website = place.placeInfo.website
+                
+                if let url = URL(string: place.placeInfo.imageURL), let imageData = NSData(contentsOf: url) {
+                    restaurant.image = imageData
+                }
+                
+                restaurants.append(restaurant)
+            }
+            
+            let storedLocation = StoredLocation(context: privateContext)
+            storedLocation.name = name
+            storedLocation.addToRestaurants(NSSet(array: restaurants))
+            
+            try privateContext.save()
+        }
+        catch let error {
+            print("Save failed: \(error.localizedDescription)")
+        }
     }
 }
